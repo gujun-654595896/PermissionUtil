@@ -25,7 +25,6 @@ object PermissionCheckUtil {
     fun checkPermissions(
         activity: Activity?,
         requestCode: Int,
-        permissionContent: String?,
         permissions: Array<String>
     ): Boolean {
         //6.0之下的版本默认权限已开,只需要再Manifest中配置

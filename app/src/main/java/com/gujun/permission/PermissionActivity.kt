@@ -23,7 +23,7 @@ open class PermissionActivity : AppCompatActivity() {
 
     private fun getPermission() {
         val hasPermission = PermissionCheckUtil.checkPermissions(
-            this, requestCode, "ceshi",
+            this, requestCode,
             arrayOf(Manifest.permission.RECORD_AUDIO, Manifest.permission.CAMERA)
         )
         if (hasPermission)
